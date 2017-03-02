@@ -1,6 +1,7 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,p,blockquote,th,td{padding: 0;margin: 0;}
 body { font: normal 100% Helvetica, Arial, sans-serif;}
 body{font-size: 12px;font-size: 1.2rem;} 
+html,body{width: 100%;height: 100%;}
 img{border:0;display: block;}
 input:focus,textarea:focus{outline:none}
 div{box-sizing: border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
@@ -22,6 +23,13 @@ a:hover{text-decoration:none;}
 /*该站公用样式*/
 .main-clor{
 	color:#E51600;
+}
+.body{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-top: 12.7rem;
 }
 /*头部*/
 header{
@@ -82,12 +90,12 @@ header{
 	line-height: 5rem;
 }
 /*筛选tab*/
-.nav{
+#nav{
 	background-color: #fff;
 	font-size: 1.5rem;
 }
 
-.nav ul li{
+#nav ul li{
 	line-height: 3.3rem;
 	float: left;
 	width: 25%;
@@ -95,11 +103,11 @@ header{
 	color: #999;
 	border-bottom: 0.2rem solid #FFFFFF;
 }
-.nav ul li:active{
+#nav ul li:active{
 	background-color: rgba(247,247,247,1);	
 	border-bottom: 0.2rem solid rgba(247,247,247,1);
 }
-.nav ul li.active-nav{
+#nav ul li.active-nav{
 	color: #E51600;
 	border-bottom: 0.2rem solid #E51600;
 }
@@ -133,6 +141,11 @@ header{
 	text-align: center;
 	line-height: 2.5rem;
 	position: relative;
+}
+.head-fixed{
+	position: fixed;
+	top: 0;left: 0;right: 0;
+	z-index: 10;
 }
 
 /*问题列表*/
@@ -181,17 +194,17 @@ header{
 .bottom-box{
 	color: #AAAAAA;
 }
-.bottom-box ul li{
+.bottom-box div{
 	float: left;
 	width: 33.3%;
 }
-.bottom-box ul li:nth-child(1){
+.bottom-box div:nth-child(1){
 	text-align: left;
 }
-.bottom-box ul li:nth-child(2){
+.bottom-box div:nth-child(2){
 	text-align: center;
 }
-.bottom-box ul li:nth-child(3){
+.bottom-box div:nth-child(3){
 	text-align: right;
 }
 .color-7f{
@@ -271,4 +284,21 @@ header{
 	height:14rem;
 	margin: 0.2rem;
 }
-
+.frame{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.slider{
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease;
+    width: 400%;
+    height: 100%;
+    overflow: hidden;
+}
+.box{
+	width:25%;
+	height: 100%;
+	float: left;
+	overflow-x: hidden;
+}
