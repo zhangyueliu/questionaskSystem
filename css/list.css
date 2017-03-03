@@ -1,0 +1,45 @@
+/*筛选tab*/
+#nav{
+	background-color: #fff;
+	font-size: 1.4rem;
+}
+
+#nav ul li{
+	line-height: 3.3rem;
+	float: left;
+	width: 16.66%;
+	text-align: center;
+	color: #999;
+	border-bottom: 0.2rem solid #FFFFFF;
+}
+#nav ul li:active{
+	background-color: rgba(247,247,247,1);	
+	border-bottom: 0.2rem solid rgba(247,247,247,1);
+}
+#nav ul li.active-nav{
+	color: #E51600;
+	border-bottom: 0.2rem solid #E51600;
+}
+/*滑动层*/
+.slider{
+    transition:transform 0.5s ease-out;
+    -webkit-transition:transform 0.5s ease-out;
+    width: 600%;
+    height: 100%;
+    overflow: hidden;
+}
+.box{
+	width:16.66%;
+	height: 100%;
+	float: left;
+	overflow-x: hidden;
+}
+.ask-div{
+	margin: 1.5rem 1rem 2rem;
+	background-color: #5cca6c;
+	border-radius: 0.5rem;
+	color: #fff;
+	font: 1.4rem;
+	text-align: center;
+	line-height: 3.5rem;
+}

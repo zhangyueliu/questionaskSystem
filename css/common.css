@@ -89,45 +89,131 @@ header{
 	color: #fff;
 	line-height: 5rem;
 }
-/*筛选tab*/
-#nav{
-	background-color: #fff;
-	font-size: 1.5rem;
+/*悬浮窗*/
+.suspend{
+	position: fixed;
+	bottom: 11rem;
+	right: 6rem;
+	z-index: 10;
+}
+.suspend .gotop{
+	background-position: 0 0;
+	width: 4.4rem;
+	height: 4.4rem;
+	display: none;
+}
+.suspend .ask-icon{
+	background-position: -5.1rem 0;
+	width: 4.4rem;
+	height: 4.4rem;	
+    margin-top: 5.2rem;
+}
+/*更多的半透明层*/
+.more-hide-dive{
+	position: fixed;
+	top:5rem;
+	right: 0.8rem;
+	z-index: 19;
+	display: none;
+}
+.more-list{	
+	background-color: rgba(35,24,21,0.8);
+	border-radius: 0.4rem;
+	margin-top: 1rem;
+}
+.more-arrow{
+	position: absolute;
+	border-color: transparent;
+	border-bottom-color: rgba(35,24,21,0.8);
+	border-width: 1.1rem 1.2rem;
+	border-style: solid;
+	top: -1rem;
+    right: 0.5rem;
+}
+.more-list ul li{
+	line-height: 3.9rem;
+	margin: 0 1rem;
+	color: #CECECE;
+	font-size: 1.3rem;
+	margin: 0 1rem;
+	border-bottom: 1px solid #CECECE;
+	position: relative;
+}
+.more-list ul li:last-child{
+	border: 0;
+}
+.more-list ul li i{
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	left: 0.3rem;
+}
+.more-list ul li .text{
+	margin-left: 3.1rem;
+}
+.my-ask{
+	background-position: -16.3rem 0;
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.change{
+	background-position: -16.3rem -2.2rem;
+	width: 1.6rem;
+	height: 1.1rem;
+}
+.home-icon{
+	background-position: -16.3rem -3.9rem;
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.red-dot{
+	background-color: #E51600;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	display: inline-block;
+	margin-left: 1.2rem;
+	margin-right: 0.3rem;
 }
 
-#nav ul li{
-	line-height: 3.3rem;
-	float: left;
-	width: 25%;
-	text-align: center;
-	color: #999;
-	border-bottom: 0.2rem solid #FFFFFF;
+/*遮罩*/
+.shade{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	top:0;
+	left: 0;
+	display: none;
+	margin-top: 5rem;
 }
-#nav ul li:active{
-	background-color: rgba(247,247,247,1);	
-	border-bottom: 0.2rem solid rgba(247,247,247,1);
-}
-#nav ul li.active-nav{
-	color: #E51600;
-	border-bottom: 0.2rem solid #E51600;
-}
+
+
+
 /*搜索框*/
 .search-div{
 	background-color: #f7f7f7;
 	border-bottom: 0.1rem solid #ECECED;
 	border-top: 0.1rem solid #ECECED;
 }
+
 .search-div>div{
 	background-color: #fff;
 	height: 2.7rem;
 	border: 0.1rem solid #ECECED;
 	margin: 0.7rem 1rem;
 	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 2.5rem;
+	position: relative;
 }
+
+
+
 .search-div i{
 	background-position:-13.9rem -9.2rem;
 	width: 1.4rem;
-	height: 1.4rem;
+	height: 1.3rem;
 	top:50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -137,15 +223,78 @@ header{
 	color: #DDDBDB;
 	font-size: 1.2rem;
 }
-.search-div>div>div{
-	text-align: center;
-	line-height: 2.5rem;
-	position: relative;
-}
+
 .head-fixed{
 	position: fixed;
 	top: 0;left: 0;right: 0;
 	z-index: 10;
+}
+/*搜索层*/
+.main-box{
+	width:100%;
+	height: 100%;
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+}
+.search-box{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: #fff;
+	transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+}
+.main-box,.search-box{
+	transition: transform 0.5s ease;
+}
+.search-box .search-div i{
+	left: 29%;
+}
+.search{
+	display: inline-block;
+	line-height: 5rem;
+	color: #fff;
+	font-size: 1.5rem;
+	position: absolute;
+	right: 0;
+	margin-right: 1.3rem;
+}
+.search-div input{
+	width: 100%;
+	text-decoration: none;
+	height: 2.5rem;
+	border: 0;
+	float: right;
+	padding:0 1rem;
+	color:#7F7F7F;
+	
+}
+.search-div input::-ms-input-placeholder{text-align: center;color: #DDDBDB;}
+.search-div input::-webkit-input-placeholder{text-align: center;color: #DDDBDB;}
+.history-box{
+	color: #7F7F7F;
+}
+.history-head{
+	padding: 1rem;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #eee;
+}
+.history-box ul li{
+	padding: 0 1rem;
+	font-size: 1.4rem;
+	border-bottom: 1px solid #eee;
+	line-height: 4rem;
+	height: 4rem;
+	box-sizing: border-box;
+}
+.search-slider{	
+	margin-top: 9.3rem;	
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
 }
 
 /*问题列表*/
@@ -288,17 +437,4 @@ header{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-}
-.slider{
-    transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease;
-    width: 400%;
-    height: 100%;
-    overflow: hidden;
-}
-.box{
-	width:25%;
-	height: 100%;
-	float: left;
-	overflow-x: hidden;
 }
