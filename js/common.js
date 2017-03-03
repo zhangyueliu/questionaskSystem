@@ -7,9 +7,10 @@ $(function(){
 		$('.shade').toggle();
 		$('.more-hide-dive').toggle();
 	});
-	$('.search-div').on('click',function(){
+	$('.search-div div').on('click',function(){
 		$('.search-box').css({"-webkit-transform":"translateX(0)"});
 		$('.main-box').css({"-webkit-transform":"translateX(-100%)"});
+		$('.search-box .search-div input').focus();
 	})
 	$('.search-box .back').on('click',function(){
 		$('.search-box').css({"-webkit-transform":"translateX(100%)"});

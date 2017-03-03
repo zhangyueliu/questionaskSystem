@@ -32,7 +32,9 @@
 	width:16.66%;
 	height: 100%;
 	float: left;
-	overflow-x: hidden;
+	overflow-x: hidden;	
+	position: relative;
+	background-color: #fff;
 }
 .ask-div{
 	margin: 1.5rem 1rem 2rem;
@@ -42,4 +44,10 @@
 	font: 1.4rem;
 	text-align: center;
 	line-height: 3.5rem;
+}
+.question-box:last-child{
+	border-bottom: 0.1rem solid #ECECED;
+}
+.mui-pull-bottom-pocket{
+	height: 0;
 }

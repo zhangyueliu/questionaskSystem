@@ -250,7 +250,7 @@ header{
 .main-box,.search-box{
 	transition: transform 0.5s ease;
 }
-.search-box .search-div i{
+.search-div i{
 	left: 29%;
 }
 .search{
@@ -270,6 +270,8 @@ header{
 	float: right;
 	padding:0 1rem;
 	color:#7F7F7F;
+	font-size: 1.2rem;
+	background-color: #fff;
 	
 }
 .search-div input::-ms-input-placeholder{text-align: center;color: #DDDBDB;}
