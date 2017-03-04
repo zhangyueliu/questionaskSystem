@@ -14,7 +14,7 @@
 		}
 		$.extend(defaults,options||{});
 		//滚动条滚动
-		$('.box').scroll(function(event) {
+		$('.mui-scroll').scroll(function(event) {
 			var top = $(this).scrollTop();
 			if(top > 50) {
 				$('.suspend .gotop').show();
@@ -40,10 +40,10 @@
 			//重复执行
 			timer = setInterval(function() {
 				//每30ms获取一次距离,计算一次速度,重新给滚动条位置赋值
-				var scrolltop = $('.box').eq(index).scrollTop();			
+				var scrolltop = $('.box').eq(index).find('.mui-scroll').scrollTop();			
 				var speed = Math.floor(-scrolltop / 6);
 				//在置顶过程中，这句代码出发scroll事件
-				$('.box').eq(index).scrollTop(scrolltop+speed);	
+				$('.box').eq(index).find('.mui-scroll').scrollTop(scrolltop+speed);	
 				//每次将false改为true
 				isTop=true;
 				//置顶后清除计时器
