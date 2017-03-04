@@ -1,4 +1,4 @@
-/*
+﻿/*
  * TouchSlider v1.0.5
  * By qiqiboy, http://www.qiqiboy.com, http://weibo.com/qiqiboy, 2012/04/11
  */
