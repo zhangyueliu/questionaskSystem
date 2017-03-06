@@ -1,0 +1,59 @@
+.body{
+	padding-top: 4rem;
+	height: auto;
+}
+
+
+.question-box:last-child{
+	border-bottom: 0.1rem solid #ECECED;
+}
+.questionmore-div .question-box:last-child{
+	border: 0;
+}
+.question-brief{
+	font-size: 1.4rem;
+    margin: 1rem 0 2rem 0;
+}
+.question-brief span{
+	color: #aaa;
+    margin-top: 1rem;
+    display: block;
+}
+.answer-in{
+	background-color: #f7f7f7;
+	padding: 1rem 1.1rem 1.5rem;
+}
+.answer-in textarea{
+	height: 8rem;
+	padding: 0.7rem;
+	color: #7f7f7f;
+	font-size: 1.2rem;
+	font-family: "微软雅黑";
+	resize: none;
+	border: 0.1rem solid #ECECED;
+    border-radius: 0.3rem;
+    width: 100%;
+    -webkit-box-sizing: border-box; 
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;	
+    margin-bottom: 1rem;
+}
+.answer-in textarea::-ms-input-placeholder{color: #AAAAAA;font-family: "微软雅黑";}
+.answer-in textarea::-webkit-input-placeholder{color: #AAAAAA;font-family: "微软雅黑";}
+.submit{
+	padding: 0rem 2.5rem;
+    background-color: #5cca6c;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    float: right;
+    line-height: 3rem;
+}
+.suspend a{
+	display: none;
+}
+.course-div{
+	border-bottom: 0;
+}
+

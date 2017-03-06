@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<title></title>
+		<script type="text/javascript" src="js/rem.js"></script>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/questiondetail.css" />
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/zepto.gotop.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/questiondetail.js"></script>
+	</head>
+
+	<body>
+		<div class="head-fixed">
+			<header>
+				<div class="qa-headaer">
+					<a href="#" class="back"><i class="bg-icon"></i></a>
+					问答详情
+					<div class="more">
+						<!--提示圆点-->
+						<i class="bg-icon more-tips"></i>
+						<!--三点-->
+						<i class="bg-icon more-none"></i>
+					</div>
+				</div>
+			</header>
+
+		</div>
+		<div class="body">
+			<div class="question-box">
+				<div class="head-box flex-box">
+					<div class="headpic">
+						<img src="img/headpic.png" width="100%" />
+					</div>
+					<div class="head-text">
+						<div class="nickname">nickname</div>
+						<div class="status"><span>已解决</span><span class="reward color-7f">悬赏<span class="score">20</span>分</span>
+						</div>
+					</div>
+					<div class="report">举报</div>
+				</div>
+				<div class="question-brief color-7f">
+					<p>这是问题标题，这是问题标题</p>
+					<span>这是问题描述这是问题描述这是问题描述这是问题描述这是问题描述</span>
+				</div>
+				<div class="bottom-box clearfix">
+					<div>2017年03月02日</div>
+					<div>建设工程经济</div>
+					<div class="color-7f">10条回答</div>
+				</div>
+			</div>
+			<!--如果被采纳则隐藏-->
+			<div class="answer-in clearfix">
+				<textarea placeholder="在此添加回答"></textarea>
+				<span class="submit">提交</span>
+			</div>
+			<div class="answer-list">
+				<div class="question-box">
+					<div class="head-box flex-box">
+						<div class="headpic">
+							<img src="img/headpic.png" width="100%" />
+						</div>
+						<div class="head-text">
+							<div class="nickname">nickname</div>
+							<div class="status"><span>2017年03月02日</span><span class="accepted">被采纳</span>
+							</div>
+						</div>
+						<div class="report">举报</div>
+					</div>
+					<div class="question-brief color-7f">
+						<p>这是用户的回答：这是问题描述这是问题描述这是问题描述这是问题描述这是问题描述</p>
+					</div>
+					<div class="bottom-box-1 clearfix">
+						<span><i class="bg-icon support"></i>100</span>
+						<span><i class="bg-icon tread"></i>100</span>
+						<span><i class="bg-icon write"></i>追问100</span>
+						<!--如果为采纳显示文字，隐藏下面的图标-->
+						<div class="accept color-7f">采纳</div>
+						<!--如果采纳，隐藏文字，显示此图标-->
+						<i class="bg-icon accept-icon"></i>
+					</div>
+					
+				</div>
+				<div class="question-box">
+					<div class="head-box flex-box">
+						<div class="headpic">
+							<img src="img/headpic.png" width="100%" />
+						</div>
+						<div class="head-text">
+							<div class="nickname">nickname</div>
+							<div class="status"><span>2017年03月02日</span>
+							</div>
+						</div>
+						<div class="report">举报</div>
+					</div>
+					<div class="question-brief color-7f">
+						<p>这是用户的回答：这是问题描述这是问题描述这是问题描述这是问题描述这是问题描述</p>
+					</div>
+					<div class="bottom-box-1 clearfix">
+						<span><i class="bg-icon support"></i>100</span>
+						<span><i class="bg-icon tread"></i>100</span>
+						<span><i class="bg-icon write"></i>追问100</span>
+						<div class="accept color-7f">采纳</div>
+					</div>
+				</div>
+				<div class="question-box">
+					<div class="head-box flex-box">
+						<div class="headpic">
+							<img src="img/headpic.png" width="100%" />
+						</div>
+						<div class="head-text">
+							<div class="nickname">nickname</div>
+							<div class="status"><span>2017年03月02日</span>
+							</div>
+						</div>
+						<div class="report">举报</div>
+					</div>
+					<div class="question-brief color-7f">
+						<p>这是用户的回答：这是问题描述这是问题描述这是问题描述这是问题描述这是问题描述</p>
+					</div>
+					<div class="bottom-box-1 clearfix">
+						<span><i class="bg-icon support"></i>100</span>
+						<span><i class="bg-icon tread"></i>100</span>
+						<span><i class="bg-icon write"></i>追问100</span>
+						<div class="accept color-7f">采纳</div>
+					</div>
+				</div>
+			</div>
+			<div class="loadmore">查看其它10条回答</div>
+			<div class="course-div">
+				<div class="course-head"><img src="img/arrows.png" class="arrow" style="display: inline;"><span class="course-head-title">你可能需要的课程</span>
+					<a href="#"><span class="course-more">更多</span><img src="img/more.png" class="course-img-more" style="display: inline;"></a>
+				</div>
+				<div class="course-wrap mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted">
+					<div style="width: 90.6rem; height: 12.6rem;" class="mui-scroll">
+						<!--此值为15.1*推荐课程数+0.03，套页面时可修改，目前是6个-->
+						<div class="course-box">
+							<a href="#">
+								<div class="course-img"><img src="img/feng.png"></div>
+								<p class="overtwo-circle">这这是课程名称</p>
+							</a>
+						</div>
+						<div class=" course-box">
+							<a href="#">
+								<div class="course-img"><img src="img/feng.png"></div>
+								<p class="overtwo-circle">这是课程名称这这是课程名称这这是课程名称课程名称</p>
+							</a>
+						</div>
+						<div class="course-box">
+							<a href="#">
+								<div class="course-img"><img src="img/feng.png"></div>
+								<p class="overtwo-circle">这是课程名称</p>
+							</a>
+						</div>
+						<div class="course-box">
+							<a href="#">
+								<div class="course-img"><img src="img/feng.png"></div>
+								<p class="overtwo-circle">这是课程名称</p>
+							</a>
+						</div>
+						<div class=" course-box">
+							<a href="#">
+								<div class="course-img"><img src="img/feng.png"></div>
+								<p class="overtwo-circle">这是课程名称</p>
+							</a>
+						</div>
+						<div class="course-box">
+							<a href="#">
+								<div class="course-img"><img src="img/feng.png"></div>
+								<p class="overtwo-circle">这是课程名称</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="course-div">
+				<div class="course-head">
+					<img src="img/arrows.png" class="arrow" style="display: inline;" />
+					<span class="course-head-title">你可能需要的图书</span>
+					<a href="#">
+						<span class="course-more">更多</span><img src="img/more.png" class="course-img-more" style="display: inline;" />
+					</a>
+				</div>
+				<div class="course-wrap mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted">
+					<div style="width: 90.6rem;height: 18.8rem;" class="mui-scroll">
+						<!--此值为15.1*推荐课程数+0.01，套页面时可修改，目前是6个-->
+						<div class="course-box">
+							<a href="#">
+								<div class="book-img">
+									<img src="img/bookimg.png" />
+								</div>
+								<p class="overtwo-circle">这是图书名称这是图书名称这是图书名称</p>
+							</a>
+						</div>
+						<div class="course-box">
+							<a href="#">
+								<div class="book-img">
+									<img src="img/bookimg.png" />
+								</div>
+								<p class="overtwo-circle">这是图书名称</p>
+							</a>
+						</div>
+						<div class="course-box">
+							<a href="#">
+								<div class="book-img">
+									<img src="img/bookimg.png" />
+								</div>
+								<p class="overtwo-circle">这是图书名称</p>
+							</a>
+						</div>
+						<div class="course-box">
+							<a href="#">
+								<div class="book-img">
+									<img src="img/bookimg.png" />
+								</div>
+								<p class="overtwo-circle">这是图书名称这是图书</p>
+							</a>
+						</div>
+						<div class="course-box">
+							<a href="#">
+								<div class="book-img">
+									<img src="img/bookimg.png" />
+								</div>
+								<p class="overtwo-circle">这是图书名称</p>
+							</a>
+						</div>
+						<div class="course-box">
+							<a href="#">
+								<div class="book-img">
+									<img src="img/bookimg.png" />
+								</div>
+								<p class="overtwo-circle">这是图书名称</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="questionmore-div">
+				<div class="course-head">
+					<img src="img/arrows.png" class="arrow" style="display: inline;">
+					<span class="course-head-title">相关回答</span>
+					<a href="#">
+						<span class="course-more">更多</span><img src="img/more.png" class="course-img-more" style="display: inline;">
+					</a>
+				</div>
+				<div>
+				<div class="question-box">
+					<div class="head-box flex-box">
+						<div class="headpic">
+							<img src="img/headpic.png" width="100%" />
+						</div>
+						<div class="head-text">
+							<div class="nickname">nickname</div>
+							<div class="status"><span>已解决</span><span class="reward color-7f">悬赏<span class="score">20</span>分</span>
+							</div>
+						</div>
+						<div class="report">举报</div>
+					</div>
+					<p class="color-7f">这是问题描述，点击进入问题详情页</p>
+					<div class="bottom-box clearfix">
+						<div>2017年03月02日</div>
+						<div>建设工程经济</div>
+						<div class="color-7f">10条回答</div>
+					</div>
+				</div>
+				<div class="question-box">
+					<div class="head-box flex-box">
+						<div class="headpic">
+							<img src="img/headpic.png" width="100%" />
+						</div>
+						<div class="head-text">
+							<div class="nickname">nickname</div>
+							<div class="status"><span>已解决</span><span class="reward color-7f">悬赏<span class="score">20</span>分</span>
+							</div>
+						</div>
+						<div class="report">举报</div>
+					</div>
+					<p class="color-7f">这是问题描述，点击进入问题详情页</p>
+					<div class="bottom-box clearfix">
+						<div>2017年03月02日</div>
+						<div>建设工程经济</div>
+						<div class="color-7f">10条回答</div>
+					</div>
+				</div>
+				<div class="question-box">
+					<div class="head-box flex-box">
+						<div class="headpic">
+							<img src="img/headpic.png" width="100%" />
+						</div>
+						<div class="head-text">
+							<div class="nickname">nickname</div>
+							<div class="status"><span>已解决</span><span class="reward color-7f">悬赏<span class="score">20</span>分</span>
+							</div>
+						</div>
+						<div class="report">举报</div>
+					</div>
+					<p class="color-7f">这是问题描述，点击进入问题详情页</p>
+					<div class="bottom-box clearfix">
+						<div>2017年03月02日</div>
+						<div>建设工程经济</div>
+						<div class="color-7f">10条回答</div>
+					</div>
+				</div>
+				</div>
+				<div class="course-head">
+					<img src="img/arrows.png" class="arrow" style="display: inline;">
+					<span class="course-head-title">相关考试</span>
+					<a href="#">
+						<span class="course-more">更多</span><img src="img/more.png" class="course-img-more" style="display: inline;">
+					</a>
+				</div>
+				<ul class="testpaper color-7f">
+					<li>
+						<a href="#">2017年建设工程经济真题</a>
+					</li>
+					<li>
+						<a href="#">2017年建设工程经济真题</a>
+					</li>
+					<li>
+						<a href="#">2017年建设工程经济真题</a>
+					</li>
+					<li>
+						<a href="#">2017年建设工程经济真题</a>
+					</li>
+					<li>
+						<a href="#">2017年建设工程经济真题</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="suspend">
+			<i class="bg-icon gotop"></i>
+			<a href="#">
+				<i class="bg-icon ask-icon"></i>
+			</a>
+		</div>
+		<div class="more-hide-dive">
+			<div class="more-arrow"></div>
+			<div class="more-list">
+				<ul>
+					<li>
+						<a href="#"><i class="bg-icon my-ask"></i><span class="text">我的问答</span><span class="red-dot"></span></a>
+					</li>
+					<li>
+						<a href="#"><i class="bg-icon change"></i><span class="text">切换科目</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="bg-icon home-icon"></i><span class="text">网校首页</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="shade"></div>
+	</body>
+
+</html>

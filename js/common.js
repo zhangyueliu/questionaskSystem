@@ -28,7 +28,16 @@ $(function(){
 	});
 	mui('body').on('tap','a',function(){document.location.href=this.href;}); 
 	
-
+	$('.support').on('tap',function(){
+		$(this).addClass('support-active').removeClass('support');
+	});
+	$('.tread').on('tap',function(){
+		$(this).addClass('tread-active').removeClass('tread');
+	});
+	$('.write').on('tap',function(){
+		$(this).addClass('write-active').removeClass('write');
+	})
+	
 });
 
 //	下拉刷新,上拉加载,初始化
@@ -72,3 +81,4 @@ $(function(){
 			}
 		}
 	}
+	

@@ -16,7 +16,9 @@ $(function() {
 		mui('.box').pullRefresh().pulldownLoading();
 	});
 	//回到顶部
-		$('body').goTop();
+		$('.suspend .gotop').on('tap', function() {
+			mui('.box').pullRefresh().scrollTo(0, 0, 500);
+		});
 	
 	
 		var metro = new metroRedux();
