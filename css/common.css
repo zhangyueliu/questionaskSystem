@@ -66,11 +66,11 @@ a:hover{text-decoration:none;}
 	top: 0;
 }
 .more-tips{
-	width: 0.7rem;
-    height: 0.7rem;
+	width: 0.8rem;
+    height: 0.8rem;
     background-position: -17.4rem -8.7rem;
-    right: 21%;
-    top: 25%;
+    right: 19%;
+    top: 23%;
 }
 
 .more-none{
@@ -109,7 +109,6 @@ a:hover{text-decoration:none;}
 	background-position: 0 0;
 	width: 4.4rem;
 	height: 4.4rem;
-	display: none;
 }
 .suspend .ask-icon{
 	background-position: -5.1rem 0;
@@ -412,13 +411,13 @@ a:hover{text-decoration:none;}
 }
 .course-wrap{
 	margin-top: 0.5rem;
-	overflow: scroll;
+	overflow: hidden;
 }
 
 .course-box{
 	margin-right: 0.5rem;
 	display: inline-block;
-	width: 14.6rem;
+	width: 14.6rem!important;
 	float: left;
 }
 .course-box:last-child{
