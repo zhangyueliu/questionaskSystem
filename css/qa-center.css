@@ -1,0 +1,104 @@
+.body{
+	padding-top: 4rem;
+	height: 100%;
+	overflow-x: hidden;
+}
+.qa-headaer{
+	background-color: #fff;
+}
+.back i{
+	background-position: -14.9rem -6.1rem;	
+	width: 0.9rem;
+	height: 1.7rem;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.person-bg{
+	background: url(../img/qa-center.png) no-repeat;
+	height: 18rem;
+	background-size: 100%;
+	position: relative;
+}
+.person-bg .headpic{
+	width: 6.8rem;
+	height: 6.8rem;
+	border: 0.25rem solid #fff;
+	background-color: #fff;
+	display: block;
+	margin: 0 auto;
+}
+.person-info .nickname{
+	color: #fff;
+	font-size: 1.4rem;
+	text-align: center;
+	line-height: 5rem;
+}
+.count-div{
+	border-top: 0.4rem solid #ECECED;
+	padding: 1.5rem 0;
+}
+.count-div>div{
+	display: inline-block;
+	width: 33.33%;
+	float: left;
+}
+.count-div div{
+	box-sizing: border-box;
+	text-align: center;
+}
+.count{
+	color: #a9a9a9;
+	font-size: 1.2rem;
+}
+.des{
+	color: #666666;
+	font-size: 1.4rem;
+	margin-top: 1.5rem;
+	border-right: 0.2rem solid #d1d1d1;
+	line-height: 1.4rem;
+}
+.count-div>div:last-child .des{
+	border-right:none;
+}
+.change-div{
+	border-top:0.4rem solid #ECECED;
+	position: relative;
+	background-color: #fff;
+	width: 100%;
+}
+.my-question,.my-qa{
+	padding: 1.2rem 0;
+	font-size: 1.4rem;
+	color: #666666;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.my-active{
+	position: absolute;
+	border: 0.1rem solid #5CCA6C;
+	width: 50%;
+	bottom: 0;
+	transition: transform 0.3s ease;
+}
+.question-box:first-child{
+	border-top: 0.1rem solid #ECECED;
+}
+.question-box:last-child{
+	border-bottom: 0.1rem solid #ECECED;
+}
+.slider{
+	height: 100%;
+	width: 200%;
+	transition: transform 0.3s ease;
+}
+.slider-half{
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+.suspend a{
+	display: none;
+}
