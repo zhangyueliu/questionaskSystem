@@ -1,6 +1,6 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,p,blockquote,th,td{padding: 0;margin: 0;}
 body { font: normal 100% Helvetica, Arial, sans-serif;}
-body{font-size: 12px;font-size: 1.2rem;} 
+body{font-size: 12px;font-size: 1.2rem;background-color: #fff;} 
 html,body{width: 100%;height: 100%;}
 img{border:0;display: block;}
 input:focus,textarea:focus{outline:none}
@@ -199,7 +199,7 @@ a:hover{text-decoration:none;}
 	top:0;
 	left: 0;
 	display: none;
-	margin-top: 5rem;
+/*	margin-top: 4rem;*/
 }
 
 
@@ -365,17 +365,17 @@ input,textarea{
 .bottom-box,.bottom-box-1{
 	color: #AAAAAA;
 }
-.bottom-box div{
+.bottom-box>div{
 	float: left;
 	width: 33.3%;
 }
-.bottom-box div:nth-child(1){
+.bottom-box>div:nth-child(1){
 	text-align: left;
 }
-.bottom-box div:nth-child(2){
+.bottom-box>div:nth-child(2){
 	text-align: center;
 }
-.bottom-box div:nth-child(3){
+.bottom-box>div:nth-child(3){
 	text-align: right;
 }
 .color-7f{
@@ -508,6 +508,9 @@ input,textarea{
 .bottom-box-1 span{
 	margin-right: 2.5rem;
 }
+.bottom-box-1 span:nth-child(3){
+	margin-right:0rem;
+}
 .loadmore{
 	line-height: 5rem;
 	color: #525252;
@@ -540,4 +543,28 @@ input,textarea{
 .accepted{
 	color:#5CCA6C;
 	margin-left: 2.5rem;
+}
+
+/*mui兼容*/
+.mui-segmented-control.mui-scroll-wrapper .mui-scroll{
+	white-space: normal;
+}
+.mui-scroll{
+	position: relative;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+     padding: initial;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	border: none;
+}
+.mui-segmented-control .mui-control-item{
+	     line-height: initial; 
+	     text-align: left;
+	     white-space:normal;
+}
+.mui-toast-message {
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF; /*toast中字体颜色*/
+    padding: 0.5rem 1rem;/*toast中文字的位置*/
 }

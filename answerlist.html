@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<script type="text/javascript" src="js/qa-rem.js"></script>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/qa-common.css" />	
+		<link rel="stylesheet" href="css/qa-answerlist.css" />
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/zepto.gotop.js"></script>
+		<script type="text/javascript" src="js/qa-common.js"></script>
+		<script type="text/javascript" src="js/qa-answerlist.js" ></script>
+	</head>
+	<body>
+		<div class="head-fixed">
+			<header>
+				<div class="qa-headaer">
+					<a href="#" class="back"><i class="bg-icon"></i></a>
+					回答
+					<div class="more">
+						<!--提示圆点-->
+						<i class="bg-icon more-tips"></i>
+						<!--三点-->
+						<i class="bg-icon more-none"></i>
+					</div>
+				</div>
+			</header>
+
+		</div>
+		<div class="body">
+			<!--这个box是进行追问的对象-->
+			<div class="question-box">
+					<div class="head-box flex-box">
+						<div class="headpic">
+							<img src="img/headpic.png" width="100%" />
+						</div>
+						<div class="head-text">
+							<div class="nickname">nickname</div>
+							<div class="status"><span>2017年03月02日</span>
+								<span class="accepted">被采纳</span>
+							</div>
+						</div>
+						<div class="report">举报</div>
+					</div>
+					<div class="question-brief color-7f">
+						<p>这是用户的回答：这是问题描述这是问题描述这是问题描述这是问题描述这是问题描述</p>
+					</div>
+					<div class="bottom-box-1 clearfix">
+						<span><i class="bg-icon support"></i>100</span>
+						<span><i class="bg-icon tread"></i>100</span>
+						<span class="asked"><i class="bg-icon write-active"></i>追问100<div class="answer-arrow"></div></span>
+						<!--如果未采纳显示文字，隐藏下面的图标-->
+						<div class="accept color-7f">采纳</div>
+						<!--如果采纳，隐藏以上文字，显示以下图标-->
+						<i class="bg-icon accept-icon"></i>
+					</div>					
+				</div>
+			<!--追问文本框，如果被采纳则隐藏-->
+			<div class="answer-in clearfix">				
+				<textarea placeholder="回复nickname:"></textarea>
+				<span class="submit">提交</span>
+			</div>
+			<!--下面这些box是回答内容的对象-->
+			<!--循环体开始-->
+			<div class="question-box">
+				<div class="head-box flex-box">					
+					<div class="head-text">
+						<div class="nickname">nickname回复nickname</div>						
+					</div>
+				</div>
+				<div class="answer-brief color-7f">
+					<p>你好，目前北京会计从业资格考试时间暂未公布，2017年全国会计证考试政策暂未确定，故公告延迟发布，请及时关注中大网校会计从业资格考试网信息</p>
+				</div>
+				<div class="bottom-box clearfix">
+					<div>2017年03月02日</div>
+					<div class="color-7f reply">回复<div class="answer-arrow"></div></div>
+					<div class="report">举报</div>
+				</div>
+			</div>
+			<!--每个回答box下都有回复文本框-->
+			<div class="answer-in clearfix">				
+				<textarea placeholder="回复nickname:"></textarea>
+				<span class="submit">提交</span>
+			</div>
+			<!--循环体结束-->
+			<div class="question-box">
+				<div class="head-box flex-box">					
+					<div class="head-text">
+						<div class="nickname">nickname回复nickname</div>						
+					</div>
+				</div>
+				<div class="answer-brief color-7f">
+					<p>你好，目前北京会计从业资格考试时间暂未公布，2017年全国会计证考试政策暂未确定，故公告延迟发布，请及时关注中大网校会计从业资格考试网信息</p>
+				</div>
+				<div class="bottom-box clearfix">
+					<div>2017年03月02日</div>
+					<div class="color-7f reply">回复<div class="answer-arrow"></div></div>
+					<div class="report">举报</div>
+				</div>
+			</div>
+			<div class="answer-in clearfix">				
+				<textarea placeholder="回复nickname:"></textarea>
+				<span class="submit">提交</span>
+			</div>
+			<div class="question-box">
+				<div class="head-box flex-box">					
+					<div class="head-text">
+						<div class="nickname">nickname回复nickname</div>						
+					</div>
+				</div>
+				<div class="answer-brief color-7f">
+					<p>你好，目前北京会计从业资格考试时间暂未公布，2017年全国会计证考试政策暂未确定，故公告延迟发布，请及时关注中大网校会计从业资格考试网信息</p>
+				</div>
+				<div class="bottom-box clearfix">
+					<div>2017年03月02日</div>
+					<div class="color-7f reply">回复<div class="answer-arrow"></div></div>
+					<div class="report">举报</div>
+				</div>
+			</div>
+			<div class="answer-in clearfix">				
+				<textarea placeholder="回复nickname:"></textarea>
+				<span class="submit">提交</span>
+			</div>
+			<!--没有更多的话不显示-->
+			<div class="loadmore">查看更多</div>
+		</div>
+		<div class="suspend">
+			<i class="bg-icon gotop"></i>
+			<a href="#">
+				<i class="bg-icon ask-icon"></i>
+			</a>
+		</div>
+		<div class="more-hide-dive">
+			<div class="more-arrow"></div>
+			<div class="more-list">
+				<ul>
+					<li>
+						<a href="#"><i class="bg-icon my-ask"></i><span class="text">我的问答</span><span class="red-dot"></span></a>
+					</li>
+					<li>
+						<a href="#"><i class="bg-icon change"></i><span class="text">切换科目</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="bg-icon home-icon"></i><span class="text">网校首页</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="shade"></div>
+	</body>
+</html>
