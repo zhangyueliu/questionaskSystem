@@ -1,0 +1,24 @@
+.question-box{
+	padding: 0.7rem 2rem;
+	position: relative;
+}
+.question-brief{
+	margin-top: 0;
+}
+.question-brief span{
+	font-size: 1.2rem;
+}
+.question-brief p{
+	font-size: 1.4rem;
+}
+.red-dot{
+	width: 0.7rem;
+	height: 0.7rem;
+	position: absolute;
+	left: 0.9rem;
+    top: 1.2rem;
+    margin: 0;
+}
+.suspend .gotop{
+	display: none;
+}

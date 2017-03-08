@@ -19,34 +19,6 @@ textarea::-webkit-input-placeholder{color:#aaa !important; }
 .qa-queclassifica-page{ position: fixed;left: 0;top: 0;z-index: 100;width: 100%;height: 100%; background: #fff;transform: translate(100%,0);-webkit-transform: translate("0",'0');transition: transform 1s;}
 .qa-reword-page{position: fixed;left: 0;top: 0;z-index: 100;width: 100%;height: 100%; background: #fff;transform: translate(100%,0);-webkit-transform: translate("100%",'0');transition: transform 1s;}
 .quesspecies-ico{background: url('imgs/bg-icon.png') no-repeat 18rem 10.9rem;background-size:;width: 16px;height: 30px;}
-#tip-box {animation: opac 3s;-webkit-animation: opac 3s;}
-@keyframes opac {
-				0% {
-					background-color: rgba(0, 0, 0, .0);
-					display: none;
-				}
-				60% {
-					background-color: rgba(0, 0, 0, .4);
-					display: block;
-				}
-				100% {
-					background-color: rgba(0, 0, 0, .0);
-					display: none;
-				}
-			}
-@-webkit-keyframes opac {
-				0% {
-					background-color: rgba(0, 0, 0, .0);
-					display: none;
-				}
-				60% {
-					background-color: rgba(0, 0, 0, .4);
-					display: block;
-				}
-				100% {
-					background-color: rgba(0, 0, 0, .0);
-					display: none;
-				}
-			}
+
 			
 			

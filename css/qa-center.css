@@ -1,10 +1,10 @@
 .body{
 	padding-top: 4rem;
-	/*height: auto;*/
-	overflow: hidden;
 }
 .qa-headaer{
 	background-color: #fff;
+	border-bottom: 0.1rem solid #ECECED;
+	box-sizing: border-box;
 }
 .back i{
 	background-position: -14.9rem -6.1rem;	
@@ -64,42 +64,69 @@
 }
 .change-div{
 	border-top:0.4rem solid #ECECED;
-	position: relative;
 	background-color: #fff;
 	width: 100%;
 }
 .my-question,.my-qa{
-	padding: 1.2rem 0;
+	padding: 1.2rem 1rem;
 	font-size: 1.4rem;
 	color: #666666;
-	width: 50%;
-	float: left;
-	text-align: center;
+	position: relative;
+	border-bottom: 0.1rem solid #ECECED;
 }
-.my-active{
+.my-question i,.my-qa i{
 	position: absolute;
-	border: 0.1rem solid #5CCA6C;
-	width: 50%;
-	bottom: 0;
-	transition: transform 0.3s ease;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
-.question-box:first-child{
-	border-top: 0.1rem solid #ECECED;
+.my-question .arrow-right,.my-qa .arrow-right{
+	right: 1rem;
+}
+.my-question span,.my-qa span{
+	margin-left: 3rem;
+}
+.my-ask{
+	background-position: -14.5rem 0;
+	width: 1.7rem;
+	height: 1.6rem;
+}
+.my-answer{
+	background-position: -14.5rem -4rem;
+	width: 1.7rem;
+	height: 1.7rem;
 }
 .question-box:last-child{
 	border-bottom: 0.1rem solid #ECECED;
 }
-.slider{
-	height: 100%;
-	width: 200%;
-	transition: transform 0.3s ease;
-}
-.slider-half{
-	width: 50%;
-	float: left;
-	height: 100%;
-	overflow-y:scroll ;
-}
 .suspend a{
+	display: none;
+}
+.headpic{
+	position: relative;
+}
+.headpic .red-dot{
+	position: absolute;
+	right: 0;
+	top:0;
+	margin: 0;
+}
+.change-div .red-dot{
+	margin: 0;
+	position: absolute;
+	margin-left: 0.5rem;
+	    width: 0.6rem;
+    height: 0.6rem;
+}
+.question-brief{
+	font-size: 1.4rem;
+    margin: 1rem 0 2rem 0;
+}
+.question-brief span{
+	color: #aaa;
+    margin-top: 1rem;
+    display: block;
+}
+.suspend .gotop{
 	display: none;
 }

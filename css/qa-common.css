@@ -452,6 +452,7 @@ input,textarea{
 	color: #AAAAAA;
 	margin-top: 0.8rem;
 	margin-bottom: 0.2rem;
+	font-size: 1.2rem;
 }
 .book-img{
 	border: 0.1rem solid #ECECED;
@@ -512,10 +513,11 @@ input,textarea{
 	position: relative;
 }
 .bottom-box-1 span{
-	margin-right: 2.5rem;
+	display: inline-block;
+    min-width: 7rem;
 }
 .bottom-box-1 span:nth-child(3){
-	margin-right:0rem;
+	min-width: auto;
 }
 .loadmore{
 	line-height: 5rem;
@@ -550,6 +552,48 @@ input,textarea{
 	color:#5CCA6C;
 	margin-left: 2.5rem;
 }
+.arrow-right{
+	background-position: -16.8rem -6.1rem;
+	width: 0.9rem;
+	height: 1.6rem;
+}
+.question-brief {
+    font-size: 1.4rem;
+    margin: 1rem 0 2rem 0;
+}
+.question-brief p{
+	font-size: 1.4rem;
+}
+/*提示框*/
+#tip-box {animation: opac 3s;-webkit-animation: opac 3s;}
+@keyframes opac {
+				0% {
+					background-color: rgba(0, 0, 0, .0);
+					display: none;
+				}
+				60% {
+					background-color: rgba(0, 0, 0, .4);
+					display: block;
+				}
+				100% {
+					background-color: rgba(0, 0, 0, .0);
+					display: none;
+				}
+			}
+@-webkit-keyframes opac {
+				0% {
+					background-color: rgba(0, 0, 0, .0);
+					display: none;
+				}
+				60% {
+					background-color: rgba(0, 0, 0, .4);
+					display: block;
+				}
+				100% {
+					background-color: rgba(0, 0, 0, .0);
+					display: none;
+				}
+			}
 
 /*mui兼容*/
 .mui-segmented-control.mui-scroll-wrapper .mui-scroll{

@@ -16,6 +16,9 @@
 	font-size: 1.4rem;
     margin: 0.5rem 0 2rem 0;
 }
+.answer-brief p{
+	font-size: 1.4rem;
+}
 .answer-in{
 	background-color: #f7f7f7;
 	padding: 1rem 1.1rem 1.5rem;
@@ -68,5 +71,8 @@
 	margin: 0;
 }
 .suspend a{
+	display: none;
+}
+.suspend .gotop{
 	display: none;
 }

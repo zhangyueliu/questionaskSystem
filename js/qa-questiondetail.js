@@ -9,4 +9,16 @@ $(function(){
 	});
 	
 	$('.body').goTop();
+	
+	//提交信息提示框
+	$(".submit").click(function(){
+		//要提交的内容
+		var text=$(this).siblings().val();
+		if(text==""){
+			tipBox("请填写回答内容");
+		}else{
+			//调取接口
+			tipBox("提交成功");
+		}
+	})
 });

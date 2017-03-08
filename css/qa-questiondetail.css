@@ -53,6 +53,9 @@
 .suspend a{
 	display: none;
 }
+.suspend .gotop{
+	display: none;
+}
 .course-div{
 	border-bottom: 0;
 }

@@ -6,7 +6,13 @@
 	var isTop=true;
 	$.fn.goTop = function(options) {
 		//滚动条滚动
-		$('.body').scroll(function() {
+		$(window).scroll(function() {
+			var top = $(window).scrollTop();
+			if(top > 100) {
+				$('.gotop').show();
+			} else {
+				$('.gotop').hide();
+			}
 			//传过来是true
 			if(!isTop){
 				clearInterval(timer);
