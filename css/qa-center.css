@@ -1,7 +1,7 @@
 .body{
 	padding-top: 4rem;
-	height: auto;
-	overflow-x: hidden;
+	/*height: auto;*/
+	overflow: hidden;
 }
 .qa-headaer{
 	background-color: #fff;
@@ -90,12 +90,15 @@
 	border-bottom: 0.1rem solid #ECECED;
 }
 .slider{
+	height: 100%;
 	width: 200%;
 	transition: transform 0.3s ease;
 }
 .slider-half{
 	width: 50%;
 	float: left;
+	height: 100%;
+	overflow-y:scroll ;
 }
 .suspend a{
 	display: none;
