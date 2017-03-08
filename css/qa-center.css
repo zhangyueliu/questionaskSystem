@@ -18,7 +18,7 @@
 .person-bg{
 	background: url(../img/qa-center.png) no-repeat;
 	height: 18rem;
-	background-size: 100%;
+	background-size: 100% 100%;
 	position: relative;
 }
 .person-bg .headpic{
