@@ -4,7 +4,7 @@ $(document).ready(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		$(".addreport-title").val($(this).text());
 	})
-	/提交信息提示框/
+	//提交信息提示框
 	$(".qa-report-btn").click(function(){
 			tipBox("您的举报内容已经提交成功");
 		if($(".addreport-title").val()==""||$(".addreport-title").val()==null){

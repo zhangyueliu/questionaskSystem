@@ -8,7 +8,6 @@ $(function(){
 		$('.slider').css({'transform':'translateX(-50%)'});
 	});
 	$(window).scroll(function(){
-		console.log(1)
 		//change-div距离浏览器的高度
 		var top=document.getElementsByClassName('change-div')[0].offsetTop-document.body.scrollTop;
 		//头部的高度
