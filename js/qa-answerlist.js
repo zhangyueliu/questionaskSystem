@@ -41,10 +41,10 @@ $(function(){
 		//要提交的内容
 		var text=$(this).siblings().val();
 		if(text==""){
-			tipBox("请填写回答内容");
+			mui.toast("请填写回答内容");
 		}else{
 			//调取接口
-			tipBox("提交成功");
+			mui.toast("提交成功");
 		}
 	})
 });

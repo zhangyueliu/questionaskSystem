@@ -1,0 +1,31 @@
+.body{
+	padding-top: 4rem;
+}
+.qa-report-title{
+	position: relative;
+}
+.qa-report-title span{
+	margin-right: 0.5rem;
+}
+.qa-report-title i{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 1.2rem;
+}
+.biref{
+	padding-bottom: 1rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ECECED;
+}
+.biref textarea{
+	height: 5rem;
+}
+.qa-report-box{
+	overflow-y: scroll;
+	height: 100%;
+}
+.qa-queclassifica-page .qa-report-title:active{
+	color: #E51600;
+}

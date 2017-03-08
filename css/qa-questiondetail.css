@@ -2,8 +2,6 @@
 	padding-top: 4rem;
 	height: auto;
 }
-
-
 .question-box:last-child{
 	border-bottom: 0.1rem solid #ECECED;
 }
