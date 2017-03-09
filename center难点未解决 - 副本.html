@@ -14,6 +14,45 @@
 		<script type="text/javascript" src="js/zepto.gotop.js"></script>
 		<script type="text/javascript" src="js/qa-common.js"></script>
 		<script type="text/javascript" src="js/qa-center.js"></script>
+		<style>
+			.body{
+	padding-top: 4rem;
+	height: 100%;
+	overflow: hidden;
+}
+.change-div{
+	border-top:0.4rem solid #ECECED;
+	position: relative;
+	background-color: #fff;
+	width: 100%;
+}
+.my-question,.my-qa{
+	padding: 1.2rem 0;
+	font-size: 1.4rem;
+	color: #666666;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.my-active{
+	position: absolute;
+	border: 0.1rem solid #5CCA6C;
+	width: 50%;
+	bottom: 0;
+	transition: transform 0.3s ease;
+}
+.slider{
+	height: 100%;
+	width: 200%;
+	transition: transform 0.3s ease;
+}
+.slider-half{
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow-y:scroll ;
+}
+		</style>
 	</head>
 
 	<body>
