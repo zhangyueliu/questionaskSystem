@@ -16,12 +16,14 @@
 	<body class="qa-report">
 		<!--举报页面-->
 		<div class="qa-report-page">
-			<header>
+			<div class="head-fixed">
+				<header>
 				<div class="qa-headaer">
 					<a href="#" class="back"><i class="bg-icon"></i></a>
-					举报
+					举报					
 				</div>
-			</header>
+			</header></div>
+			<div class="body">
 			<div class="qa-report-box qa-fix-bottom">
 				<div class="qa-report-choos" id="qa-report-choos">
 					<div v-for="item in items" class="qa-report-title qacolor-a qabd-ec " >
@@ -48,6 +50,7 @@
 					<div id="report-submit" class="qa-report-btn">确认举报</div>
 				</div>
 			</div>
+		</div>
 		</div>
 		<input class="addreport-title" type="hidden" value="广告"/>
 	</body>
