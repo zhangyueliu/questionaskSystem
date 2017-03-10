@@ -7,9 +7,14 @@ $(function(){
 		$('.shade').toggle();
 		$('.more-hide-dive').toggle();
 	});
-	$('.search-div div').on('click',function(){
+	$('.main-box .search-div div').on('click',function(){
+		//层滑动
 		$('.search-box').css({"-webkit-transform":"translateX(0)"});
 		$('.main-box').css({"-webkit-transform":"translateX(-100%)"});
+		//获取显示的搜索词
+		var word=$('.main-box .search-div input').val().trim();
+		//赋给搜索层
+		$('.search-box .search-div input').val(word);
 		$('.search-box .search-div input').focus();
 	});
 	$('.search-box .back').on('tap',function(){
@@ -82,3 +87,13 @@ $(function(){
 		}
 	}
 	
+//取地址栏
+function GetQueryString(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if(r != null) {
+		return unescape(r[2]);
+	} else {
+		return '';
+	}
+}

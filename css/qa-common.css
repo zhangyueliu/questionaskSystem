@@ -604,9 +604,6 @@ input,textarea{
 .mui-segmented-control.mui-scroll-wrapper .mui-scroll{
 	white-space: normal;
 }
-.mui-scroll{
-	position: relative;
-}
 .mui-segmented-control.mui-scroll-wrapper .mui-control-item{
      padding: initial;
 }
@@ -623,3 +620,5 @@ input,textarea{
     color: #FFFFFF; /*toast中字体颜色*/
     padding: 0.5rem 1rem;/*toast中文字的位置*/
 }
+
+

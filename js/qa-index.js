@@ -1,8 +1,7 @@
 $(function() {
-	//取数据的条件
+	//取数据的条件 首页的筛选条件不包括关键字，当输入关键字搜索时跳转到列表页
 	var filter = {
 			type: 0, //层选项
-			word: '', //关键字
 			page: 1
 		}
 		//切换层
@@ -23,6 +22,13 @@ $(function() {
 	//回到顶部
 	$('.suspend .gotop').on('tap', function() {
 		mui('.box').pullRefresh().scrollTo(0, 0, 500);
+	});
+
+	//点击搜索
+	$('.search').on('tap', function() {
+		var words = $('.search-box input').val().trim();
+		//跳转到列表页
+		window.location.href='list.html?word='+words;
 	});
 
 	var metro = new metroRedux();
@@ -62,4 +68,5 @@ $(function() {
 		indicators: true,
 		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006  
 	});
+
 });

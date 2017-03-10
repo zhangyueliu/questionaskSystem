@@ -1,8 +1,17 @@
 $(function() {
+	
 	var filter = {
 			type: 0, //层选项
 			word: '', //关键字
 			page: 1
+		}
+	var words=GetQueryString('word');
+	filter.word=words;
+		$('.main-box input').val(words);
+		if(words!=""&&words!=null){		
+			$('.main-box .search-div i').css({'display':'none'});
+		}else{
+			$('.main-box .search-div i').css({'display':'block'});
 		}
 		//切换层
 	$('#nav li').on('tap', function() {
@@ -21,6 +30,22 @@ $(function() {
 	//回到顶部
 	$('.suspend .gotop').on('tap', function() {
 		mui('.box').pullRefresh().scrollTo(0, 0, 500);
+	});
+	
+	//点击搜索
+	$('.search').on('tap',function(){
+		//层滑动回去
+		$('.search-box').css({"-webkit-transform":"translateX(100%)"});
+		$('.main-box').css({"-webkit-transform":"translateX(0)"});
+		words=$('.search-box input').val().trim();
+		filter.word=words;
+		$('.main-box input').val(words);
+		if(words!=""&&words!=null){		
+			$('.main-box .search-div i').css({'display':'none'});
+		}else{
+			$('.main-box .search-div i').css({'display':'block'});
+		}
+		mui('.box').pullRefresh().pulldownLoading();
 	});
 
 	var metro = new metroRedux();
