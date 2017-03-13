@@ -172,7 +172,7 @@ a:hover{text-decoration:none;}
 }
 .more-list ul li .text{
 	margin-left: 3.1rem;
-	margin-right: 1.2rem;
+	margin-right: 2.2rem;
 }
 .my-ask{
 	background-position: -16.3rem 0;
@@ -194,8 +194,12 @@ a:hover{text-decoration:none;}
 	width: 0.8rem;
 	height: 0.8rem;
 	border-radius: 50%;
-	display: inline-block;
-	margin-right: 0.3rem;
+	/*display: inline-block;
+	margin-right: 0.3rem;*/
+	position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /*遮罩*/
@@ -250,7 +254,7 @@ a:hover{text-decoration:none;}
 .head-fixed{
 	position: fixed;
 	top: 0;left: 0;right: 0;
-	z-index: 20;
+	z-index: 22;
 }
 /*搜索层*/
 .main-box{
@@ -620,5 +624,7 @@ input,textarea{
     color: #FFFFFF; /*toast中字体颜色*/
     padding: 0.5rem 1rem;/*toast中文字的位置*/
 }
-
+.mui-scroll{
+	position: relative;
+}
 
