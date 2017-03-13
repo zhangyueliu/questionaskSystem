@@ -1,11 +1,15 @@
 $(document).ready(function(){
 	/*举报页面进入提问页面*/
 	$(".js-report-list").click(function(){
-		$(this).addClass("active").siblings().removeClass("active");
-		$(".addreport-title").val($(this).text());
+		$(this).toggleClass("active");
+		$(this).find('i').toggle();
 	})
 	//提交信息提示框
 	$("#report-submit").click(function(){
+		if($('.active').length<=0){
+			mui.toast("请选择");
+			return;
+		}
 		if($("textarea").val()==""){
 			mui.toast("请填写补充说明");
 		}else{

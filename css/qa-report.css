@@ -20,5 +20,5 @@ textarea::-webkit-input-placeholder{color:#aaa !important; }
 .qa-reword-page{position: fixed;left: 0;top: 0;z-index: 100;width: 100%;height: 100%; background: #fff;transform: translate(100%,0);-webkit-transform: translate("100%",'0');transition: transform 1s;}
 .quesspecies-ico{background: url('imgs/bg-icon.png') no-repeat 18rem 10.9rem;background-size:;width: 16px;height: 30px;}
 .body {padding-top: 4rem;}
-			
+.js-report-list i{display: none;}
 			
