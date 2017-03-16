@@ -102,12 +102,10 @@
 .suspend a{
 	display: none;
 }
-.headpic{
-	position: relative;
-}
-.headpic .red-dot{
+
+.red-dot{
 	position: absolute;
-	right: 0;
+	left: 2.6rem;
 	top:0;
 	margin: 0;
 	transform: inherit;

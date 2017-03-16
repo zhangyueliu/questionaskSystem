@@ -73,6 +73,10 @@ html,body{
 .head-text{
 	margin: 0;
 }
+.headpic
+{
+    margin-right:1rem;
+}
 .suspend a{
 	display: none;
 }

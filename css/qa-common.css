@@ -18,12 +18,14 @@ ul,li{list-style-type:none;}
 .ver-middle{position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%);}
 
 /*点点显示*/
-.over-circle{display:inline-block;padding:0.1rem;width:100%;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;}
+.over-circle{white-space:nowrap;display:inline-block;padding:0.1rem;width:100%;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;}
 .overtwo-circle{display: -webkit-box;overflow: hidden;word-break: break-all;-webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 .flex-box{display: flex;display: -webkit-flex;}
 a{text-decoration:none;color: currentcolor;}
-a:hover{text-decoration:none;}
+a:hover{text-decoration:none;color: currentcolor;}
+a:active{color: currentcolor;}
 /*该站公用样式*/
+.brief a,.title a{display: block;}
 .main-clor{
 	color:#E51600;
 }
@@ -73,15 +75,15 @@ a:hover{text-decoration:none;}
 	position: absolute;
 	width: 0.8rem;
     height: 0.8rem;
-    background-position: -17.4rem -8.7rem;
+    background-position: -17.3rem -8.7rem;
     right: 19%;
-    top: 23%;
+    top: 20%;
 }
 
 .more-none{
-	width: 0.7rem;
-    height: 2.3rem;
-    background-position: -16.6rem -8.7rem;
+	    width: 0.7rem;
+    height: 1.9rem;
+    background-position: -16.6rem -9rem;
     right: 0;
     position: absolute;
     top: 50%;
@@ -90,9 +92,11 @@ a:hover{text-decoration:none;}
 }
 
 .select{
-	background-position:-11.8rem -4.4rem ;
-	width: 2.1rem;
-	height: 1.5rem;
+	background-size: 14.4rem 8.72rem!important;
+    background-position: -9.44rem -3.6rem;
+    width: 1.68rem;
+    height: 1.2rem;
+    margin-top: 0.4rem;
 	}
 
 .bg-icon{
@@ -345,9 +349,9 @@ input,textarea{
 .question-box:last-child{
 	border: 0;
 }
-.question-box>p{
+.brief{
 	font-size: 1.4rem;
-	color: #7F7F7F;
+	color: #333;
 	margin: 1rem 0 2rem 0;
 }
 .head-box{
@@ -358,9 +362,12 @@ input,textarea{
 	width: 3.3rem;
 	height: 3.3rem;
 	border-radius: 50%;
+	overflow: hidden;
 }
 .headpic img{
 	border-radius: 50%;
+	height: 100%;
+	width: 100%;
 }
 .headpic,.head-text,.report{
 	display: inline-block;
@@ -386,18 +393,26 @@ input,textarea{
 .bottom-box,.bottom-box-1{
 	color: #AAAAAA;
 }
-.bottom-box>div{
-	float: left;
-	width: 33.3%;
+.bottom-box .time,.bottom-box .subject,.bottom-box .answercount
+{
+    float: left;
 }
-.bottom-box>div:nth-child(1){
-	text-align: left;
+.bottom-box .time
+{
+    width:28%;
+    text-align:left;
+    }
+.bottom-box .subject
+{
+    width:44%;
+    text-align:center;
+    height: 1.6rem;
+    padding: 0;
 }
-.bottom-box>div:nth-child(2){
-	text-align: center;
-}
-.bottom-box>div:nth-child(3){
-	text-align: right;
+.bottom-box .answercount
+{
+    width:28%;
+    text-align:right;
 }
 .color-7f{
 	color:#7f7f7f;
@@ -478,45 +493,39 @@ input,textarea{
 	margin: 0.2rem;
 }
 .support{
-	background-position: -2.45rem -6.1rem;
-	width: 1.3rem;
-	height: 1.3rem;
-	vertical-align: text-top;
+	background-position: -2.4rem -6rem;
+	width: 1.4rem;
+	height: 1.4rem;
 	margin-right: 0.5rem;
 }
 .support-active{
-	background-position: 0rem -6.1rem;
-	width: 1.3rem;
-	height: 1.3rem;
-	vertical-align: text-top;
+	background-position: 0rem -6rem;
+	width: 1.4rem;
+	height: 1.4rem;
 	margin-right: 0.5rem;
 }
 .tread{
-	background-position: -7.35rem -6.1rem;
-	width: 1.3rem;
-	height: 1.3rem;
-	vertical-align: text-top;
+	background-position: -7.3rem -6rem;
+	width: 1.4rem;
+	height: 1.4rem;
 	margin-right: 0.5rem;
 }
 .tread-active{
-	background-position: -4.9rem -6.1rem;
-	width: 1.3rem;
-	height: 1.3rem;
-	vertical-align: text-top;
+	background-position: -4.9rem -6rem;
+	width: 1.4rem;
+	height: 1.4rem;
 	margin-right: 0.5rem;
 }
 .write{
-	background-position: -12.25rem -6.1rem;
-	width: 1.3rem;
-	height: 1.3rem;
-	vertical-align: text-top;
+	background-position: -12.2rem -6rem;
+	width: 1.4rem;
+	height: 1.4rem;
 	margin-right: 0.5rem;
 }
 .write-active{
-	background-position: -9.8rem -6.1rem;
-	width: 1.3rem;
-	height: 1.3rem;
-	vertical-align: text-top;
+	background-position: -9.8rem -6rem;
+	width: 1.4rem;
+	height: 1.4rem;
 	margin-right: 0.5rem;
 }
 .accept{
@@ -576,9 +585,17 @@ input,textarea{
     font-size: 1.4rem;
     margin: 1rem 0 2rem 0;
 }
-.question-brief p{
+.title{
 	font-size: 1.4rem;
+	color:#333;
 }
+.content
+{
+        color: #333!important;
+    margin-top: 1rem;
+    display: block;
+}
+
 /*提示框*/
 #tip-box {animation: opac 3s;-webkit-animation: opac 3s;}
 @keyframes opac {
@@ -609,6 +626,8 @@ input,textarea{
 					display: none;
 				}
 			}
+
+
 
 /*mui兼容*/
 .mui-segmented-control.mui-scroll-wrapper .mui-scroll{
